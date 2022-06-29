@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    border: 0px;
+    font-family:'Montserrat', sans-serif, medium;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+
+input {
+    background-color: $color-principal;
+    color: aliceblue;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 7px gray;
+    
+}

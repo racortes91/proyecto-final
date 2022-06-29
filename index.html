@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/translated.css">
+    <title>Pixel Games</title>
+</head>
+<body>
+    <!-- INICIO SECCIÓN MENÚ-->
+    <header class="menu">
+        <picture class="menu__images">
+            <a class="menu__link" href="index.html">
+                <img class="menu__logo" src="./img/logo.png" width="150px" alt="">
+            </a>
+        </picture>
+        <nav>
+            <ul class="menu__enlaces">
+                <li>
+                    <a class="menu__link" href="">INICIO</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">CONSOLAS</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">FIGURAS</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">JUEGOS</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN SECCIÓN MENÚ-->
+
+    <!-- INICIO SECCIÓN CARRUSEL-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carrusel-pokemon.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carrusel-fire.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carrusel-mario.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- FIN SECCIÓN CARRUSEL-->
+
+    <!--Inicio Sección Productos-->
+    <section class="consolas">
+        <h2 class="consolas__titulo">Consolas y Accesorios</h2>
+        <section class="consolas__contenedor">
+            <article class="consola__producto consola__producto--ps5">
+                <img src="img/pls5.jpg" alt="" height="200px" class="pl5-foto">
+                <h3>Playstation 5</h3>
+                <p class="consola__precio"> $750.000</p>
+                <input type="button" value="anadir">
+                </div>
+            </article>
+            <article class="consola__producto consola__producto--swift">
+                <img src="img/nintendo-swift.jpg" alt="" height="200px" class="swift-foto">
+                <h3>Nintendo Swift</h3>
+                <p class="precio"> $350.000</p>
+                <input type="button" value="anadir">
+            </article>
+            <article class="consola__producto consola__producto--series">
+                <img src="img/xbox-series.jpg" alt="" height="200px" class="series-foto">
+                <h3>Xbox Series</h3>
+                <p class="precio"> $350.000</p>
+                <input type="button" value="anadir">
+            </article>
+        </section>
+    </section>   
+    <!--Fin Sección Productos-->
+    
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>

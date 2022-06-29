@@ -1,0 +1,99 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-principal;
+    width: auto;
+    background: $color-principal;
+    padding: 20px;
+    box-shadow: 2px 2px 7px;
+    animation: fadein 2s; 
+
+    &__logo:hover {
+        -ms-transform: scale(1.0);
+        transform: scale(1.2);
+    }
+
+    &__enlaces {
+        display: flex;
+        gap: $spacing-xs;
+
+        li {
+            list-style: none;
+        }
+        
+        a {
+            font-family: $font-text;
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            color: rgb(1, 80, 1);
+        }
+    }
+
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
+   }
+
+@media screen and (max-width: 320px) {
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-principal;
+        background: $color-principal;
+        padding: 20px;
+        box-shadow: 2px 2px 7px;
+        animation: fadein 2s; 
+
+        &__logo {
+            padding-bottom: $spacing-s; 
+        }
+    
+
+        &__enlaces {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: $spacing-xs;
+            font-size: $font-s;
+            align-items: center;
+    
+            li {
+                list-style: none;
+                flex-wrap: wrap;
+            }
+            
+            a {
+                font-family: $font-text;
+                flex-wrap: wrap;
+                color: white;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+    
+            a:hover {
+                color: rgb(1, 80, 1);
+            }
+        }
+    
+    }
+    
+    
+}
