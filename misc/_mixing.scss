@@ -1,0 +1,10 @@
+@mixin flex($wrap, $dir, $just, $time, $padd ) {
+
+        display: flex;
+        flex-wrap: $wrap;
+        flex-direction: $dir;
+        justify-content: $just;
+        animation: fadein $time;
+        padding-bottom: $padd; 
+    
+}

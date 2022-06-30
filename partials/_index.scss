@@ -1,12 +1,13 @@
  /* CONSOLAS */
 
 .consolas {
-    display: flex;
+    @include flex(wrap, column, center, fadein 1s, $spacing-m);
+    /*display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     animation: fadein 1s;
-    padding-bottom: $spacing-m; 
+    padding-bottom: $spacing-m; */
     
     &__titulo {
         display: flex;
