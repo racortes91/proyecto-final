@@ -6,7 +6,7 @@
     background-color: $color-principal;
     width: auto;
     background: $color-principal;
-    padding: 20px;
+    padding: $spacing-xs;
     box-shadow: 2px 2px 7px;
     animation: fadein 2s; 
 
@@ -58,9 +58,10 @@
         align-items: center;
         background-color: $color-principal;
         background: $color-principal;
-        padding: 20px;
+        padding: $spacing-xs;
         box-shadow: 2px 2px 7px;
         animation: fadein 2s; 
+
 
         &__logo {
             padding-bottom: $spacing-s; 
@@ -70,18 +71,17 @@
         &__enlaces {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            gap: $spacing-xs;
+            gap: $spacing-xxs;
             font-size: $font-s;
             align-items: center;
     
             li {
                 list-style: none;
-                flex-wrap: wrap;
             }
             
             a {
                 font-family: $font-text;
+                font-size: $font-s;
                 flex-wrap: wrap;
                 color: white;
                 text-decoration: none;
@@ -91,9 +91,59 @@
             a:hover {
                 color: rgb(1, 80, 1);
             }
+        } 
+    } 
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-principal;
+        background: $color-principal;
+        padding: $spacing-xs;
+        box-shadow: 2px 2px 7px;
+        animation: fadein 2s; 
+
+
+        &__logo {
+            padding-bottom: $spacing-s; 
         }
     
-    }
+
+        &__enlaces {
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-xxs;
+            font-size: $font-s;
+            align-items: center;
     
+            li {
+                list-style: none;
+                align-items: center;
+            }
+            
+            a {
+                font-family: $font-text;
+                font-size: $font-s;
+                flex-wrap: wrap;
+                color: white;
+                text-decoration: none;
+                transition: 0.5s;
+            }
     
+            a:hover {
+                color: rgb(1, 80, 1);
+            }
+        } 
+    } 
 }
