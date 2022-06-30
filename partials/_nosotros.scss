@@ -1,0 +1,29 @@
+.banner {
+    display: flex;
+    width: auto;
+}
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: $spacing-xxs;
+
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        padding: $spacing-l;
+        font-family: $font-titulo;
+        font-weight: 800;
+        color: $color-titulo;
+    }
+
+    p {
+        display: flex;
+        font-size: $spacing-xs;
+        padding-bottom: $spacing-s;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}

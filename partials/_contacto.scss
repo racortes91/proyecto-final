@@ -1,0 +1,15 @@
+.form__seccion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: $spacing-m;
+
+    &__datos {
+        padding: $spacing-xs;
+    }
+
+    &__gif {
+        padding: $spacing-xs;
+    }
+
+}

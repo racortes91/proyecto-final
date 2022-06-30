@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Cadena de tiendas, especializada en juegos y accesorios para las últimas consolas del mercado, juguetes coleccionables, software y accesorios para PC.">
     <meta name="keywords" content="videojuegos, juegos, gamers, games, geek, consolas, playstation, xbox, nintendo, pd, computacion, electronica, audio, comics">
     <meta property="og:title" content="Pixel Games - Juégatela">
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/translated.css">
+    <link rel="stylesheet" href="../css/translated.css">
     <title>Pixel Games - Juégatela</title>
 </head>
 <body>
@@ -25,98 +26,58 @@
     <header class="menu">
         <picture class="menu__images">
             <a class="menu__link" href="index.html">
-                <img class="menu__logo" src="./img/logo.png" width="150px" alt="">
+                <img class="menu__logo" src="../img/logo.png" width="150px" alt="">
             </a>
         </picture>
         <nav>
             <ul class="menu__enlaces">
                 <li>
-                    <a class="menu__link" href="index.html">INICIO</a>
+                    <a class="menu__link" href="../index.html">INICIO</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">NOSOTROS</a>
+                    <a class="menu__link" href="./nosotros.html">NOSOTROS</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">FIGURAS</a>
+                    <a class="menu__link" href="./figuras.html">FIGURAS</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./pages/juegos.html">JUEGOS</a>
+                    <a class="menu__link" href="./juegos.html">JUEGOS</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">CONTACTO</a>
+                    <a class="menu__link" href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- FIN SECCIÓN MENÚ-->
 
-    <!-- INICIO SECCIÓN CARRUSEL-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carrusel-pokemon.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel-fire.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel-mario.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- FIN SECCIÓN CARRUSEL-->
+    <!--Inicio Sección banner-->
+    <section class="banner">
+        <img class="banner__imagen" src="../img/banner-nosotros.png" width="100%" alt="">
+    </section>
+    <!--Fin Sección banner-->
 
-    <!--Inicio Sección Productos-->
-    <section class="consolas">
-        <h2 class="consolas__titulo">Consolas y Accesorios</h2>
-        <section class="consolas__contenedor">
-            <article class="consola__producto consola__producto--ps5">
-                <img src="img/pls5.jpg" alt="" height="200px" class="pl5-foto">
-                <h3>Playstation 5</h3>
-                <p class="consola__precio"> $750.000</p>
-                <input type="button" value="anadir">
-                </div>
-            </article>
-            <article class="consola__producto consola__producto--swift">
-                <img src="img/nintendo-swift.jpg" alt="" height="200px" class="swift-foto">
-                <h3>Nintendo Swift</h3>
-                <p class="precio"> $350.000</p>
-                <input type="button" value="anadir">
-            </article>
-            <article class="consola__producto consola__producto--series">
-                <img src="img/xbox-series.jpg" alt="" height="200px" class="series-foto">
-                <h3>Xbox Series</h3>
-                <p class="precio"> $350.000</p>
-                <input type="button" value="anadir">
-            </article>
-        </section>
-    </section>   
-    <!--Fin Sección Productos-->
+    <!--Inicio Sección Nosotros-->
+    <div class="nosotros">
+        <h2 class="nosotros__titulo">Amamos Las Aventuras Virtuales</h2>
+        <p class="nosotros__texto"> Amamos las aventuras virtuales, cientos de historias que contar y derrotas que superar.¿Qué hacemos cunado?...
+            nos queda la última bala, la última vida? o los últimos segundos del super clásico?...<br>
+        nos queda, seguir y aprender, memorizar cada patrón que nos va a ayudar a enterder como avanzar, porque después de todo, de eso se trata la vida.
+        <br>Bienvenidos a Pixel Games.</p>
+    </div> 
+    <!--Fin Sección Nosotros-->
 
     <!-- INICIO SECCIÓN CARRUSEL 2-->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/novedades-1.png" class="d-block w-100" alt="...">
+            <img src="../img/novedades-1.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/novedades-2.png" class="d-block w-100" alt="...">
+            <img src="../img/novedades-2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/novedades-3.jpg" class="d-block w-100" alt="...">
+            <img src="../img/novedades-3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -135,19 +96,19 @@
         <h2 class="novedades__titulo">Novedades</h2>
         <section class="novedades__contenedor">
             <article class="novedades__producto">
-                <img src="img/deku.jpg" alt="" height="200px">
+                <img src="../img/deku.jpg" alt="" height="200px">
                 <h3>Figura Boku No Hero</h3>
                 <p class="precio"> $50.000</p>
                 <input type="button" value="anadir">
             </article>
             <article class="novedades__producto"> 
-                <img src="img/elden-ring.jpg" alt="" height="200px">
+                <img src="../img/elden-ring.jpg" alt="" height="200px">
                 <h3>Elden Ring Ps5</h3>
                 <p class="precio"> $65.000</p>
                 <input type="button" value="anadir">
             </article>
             <article class="novedades__producto"> 
-                <img src="img/dualsense.jpg" alt="" height="200px">
+                <img src="../img/dualsense.jpg" alt="" height="200px">
                 <h3>Dualsense Ps5</h3>
                 <p class="precio"> $55.000</p>
                 <input type="button" value="anadir">
@@ -160,11 +121,11 @@
     <section class="lanzamientos">
         <h2 class="lanzamientos__titulo">Próximos lanzamientos</h2>
         <section class="lanzamientos__juegos">
-            <img src="img/lanzamineto-1.jpg" alt="">
-            <img src="img/lanzamineto-2.jpg" alt="">
-            <img src="img/lanzamineto-3.jpg" alt="">
-            <img src="img/lanzamineto-4.jpg" alt="">
-            <img src="img/lanzamineto-5.jpg" alt="">
+            <img src="../img/lanzamineto-1.jpg" alt="">
+            <img src="../img/lanzamineto-2.jpg" alt="">
+            <img src="../img/lanzamineto-3.jpg" alt="">
+            <img src="../img/lanzamineto-4.jpg" alt="">
+            <img src="../img/lanzamineto-5.jpg" alt="">
         </section>
     </section>
 
@@ -173,15 +134,15 @@
     <footer class="footer">
         <picture class="footer__images">
             <a class="footer__link" href="index.html">
-                <img class="footer__logo" src="./img/logo.png" width="150px" alt="">
+                <img class="footer__logo" src="../img/logo.png" width="150px" alt="">
             </a>
         </picture>
         <section class="footer__rrss">
             <a href="">
-                <img src="img/fb.png" width="35px" alt="">
+                <img src="../img/fb.png" width="35px" alt="">
             </a>
             <a href="">
-                <img src="img/ig.png" width="35px" alt="">
+                <img src="../img/ig.png" width="35px" alt="">
             </a>
         </section>
         <section class="footer__información" >

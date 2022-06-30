@@ -123,12 +123,14 @@ input {
       .menu__enlaces a:hover {
         color: #015001; } }
 
+/* CONSOLAS */
 .consolas {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  animation: fadein 1s; }
+  animation: fadein 1s;
+  padding-bottom: 60px; }
   .consolas__titulo {
     display: flex;
     justify-content: center;
@@ -230,12 +232,14 @@ input {
         .consolas .consolas__contenedor__producto p {
           font-size: 40px; } }
 
+/* NOVEDADES */
 .novedades {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  animation: fadein 1s; }
+  animation: fadein 1s;
+  padding-bottom: 60px; }
   .novedades__titulo {
     display: flex;
     justify-content: center;
@@ -270,7 +274,7 @@ input {
     opacity: 1; } }
 
 @media screen and (max-width: 320px) {
-  .cnovedades {
+  .novedades {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -278,20 +282,20 @@ input {
     align-items: center;
     width: min-content;
     animation: fadein 1s; }
-    .cnovedades__titulo {
+    .novedades__titulo {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       width: 550px;
       padding: 40px;
       font-size: 30px; }
-    .cnovedades .novedades__contenedor {
+    .novedades .novedades__contenedor {
       display: flex;
       flex-direction: column;
       justify-items: center;
       gap: 20px;
       width: min-content; }
-      .cnovedades .novedades__contenedor__producto {
+      .novedades .novedades__contenedor__producto {
         justify-items: center;
         padding: 30px;
         background-color: #eaeaea;
@@ -299,9 +303,9 @@ input {
         box-shadow: 2px 2px 7px gray;
         text-align: center;
         font-size: 20px; }
-        .cnovedades .novedades__contenedor__producto h3 {
+        .novedades .novedades__contenedor__producto h3 {
           font-size: 40px; }
-        .cnovedades .novedades__contenedor__producto p {
+        .novedades .novedades__contenedor__producto p {
           font-size: 40px; } }
 
 @media screen and (max-width: 480px) {
@@ -336,3 +340,605 @@ input {
           font-size: 40px; }
         .novedades .novedades__contenedor__producto p {
           font-size: 40px; } }
+
+.lanzamientos__titulo {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  font-family: "Montserrat", sans-serif, bold;
+  font-weight: 800;
+  color: #02b902; }
+  .lanzamientos__titulo__juegos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .lanzamientos__titulo__juegos img {
+      padding: 40px; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  background: #02b902;
+  padding: 20px;
+  box-shadow: 2px 2px 7px;
+  animation: fadein 2s;
+  margin-top: 60px; }
+  .footer__logo {
+    padding: 10px; }
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px; }
+    .footer__info h3 {
+      font-size: 20px;
+      color: #605f5f; }
+    .footer__info p {
+      font-size: 20px;
+      color: #2a2a2a; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 320px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    background: #02b902;
+    padding: 20px;
+    box-shadow: 2px 2px 7px;
+    animation: fadein 2s;
+    margin-top: 60px; }
+    .footer__logo {
+      padding: 10px; }
+    .footer__info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px; }
+      .footer__info h3 {
+        font-size: 20px;
+        color: #605f5f; }
+      .footer__info p {
+        font-size: 20px;
+        color: #2a2a2a; } }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    background: #02b902;
+    padding: 20px;
+    box-shadow: 2px 2px 7px;
+    animation: fadein 2s;
+    margin-top: 60px; }
+    .footer__logo {
+      padding: 10px; }
+    .footer__info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px; }
+      .footer__info h3 {
+        font-size: 20px;
+        color: #605f5f; }
+      .footer__info p {
+        font-size: 20px;
+        color: #2a2a2a; } }
+
+/* JUEGOS */
+.juegos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadein 1s;
+  padding-bottom: 60px; }
+  .juegos__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    font-family: "Montserrat", sans-serif, bold;
+    font-weight: 800;
+    color: #02b902; }
+  .juegos__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px; }
+    .juegos__contenedor .juegos__producto {
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 2px 2px 2px #b8b8b8;
+      align-items: center; }
+      .juegos__contenedor .juegos__producto h3 {
+        padding: 20px; }
+      .juegos__contenedor .juegos__producto p {
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif, medium; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 320px) {
+  .juegos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    animation: fadein 1s; }
+    .juegos__titulo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .juegos .juegos__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .juegos .juegos__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .juegos .juegos__contenedor__producto h3 {
+          font-size: 40px; }
+        .juegos .juegos__contenedor__producto p {
+          font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .juegos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1s; }
+    .juegos__titulo {
+      display: flex;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .juegos .juegos__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .juegos .juegos__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .juegos .juegos__contenedor__producto h3 {
+          font-size: 40px; }
+        .juegos .juegos__contenedor__producto p {
+          font-size: 40px; } }
+
+/* NOVEDADES */
+.novedades {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadein 1s;
+  padding-bottom: 60px; }
+  .novedades__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    font-family: "Montserrat", sans-serif, bold;
+    font-weight: 800;
+    color: #02b902; }
+  .novedades__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px; }
+    .novedades__contenedor .novedades__producto {
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 2px 2px 2px #b8b8b8;
+      align-items: center; }
+      .novedades__contenedor .novedades__producto h3 {
+        padding: 20px; }
+      .novedades__contenedor .novedades__producto p {
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif, medium; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 320px) {
+  .novedades {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    animation: fadein 1s; }
+    .novedades__titulo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .novedades .novedades__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .novedades .novedades__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .novedades .novedades__contenedor__producto h3 {
+          font-size: 40px; }
+        .novedades .novedades__contenedor__producto p {
+          font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .novedades {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1s; }
+    .novedades__titulo {
+      display: flex;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .novedades .novedades__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .novedades .novedades__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .novedades .novedades__contenedor__producto h3 {
+          font-size: 40px; }
+        .novedades .novedades__contenedor__producto p {
+          font-size: 40px; } }
+
+/* LANZAMIENTOS */
+.lanzamientos__titulo {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  font-family: "Montserrat", sans-serif, bold;
+  font-weight: 800;
+  color: #02b902; }
+  .lanzamientos__titulo__juegos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .lanzamientos__titulo__juegos img {
+      padding: 40px; }
+
+/* FIGURAS */
+.figuras {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadein 1s;
+  padding-bottom: 60px; }
+  .figuras__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    font-family: "Montserrat", sans-serif, bold;
+    font-weight: 800;
+    color: #02b902; }
+  .figuras__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px; }
+    .figuras__contenedor .figuras__producto {
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 2px 2px 2px #b8b8b8;
+      align-items: center; }
+      .figuras__contenedor .figuras__producto h3 {
+        padding: 20px; }
+      .figuras__contenedor .figuras__producto p {
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif, medium; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 320px) {
+  .figuras {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    animation: fadein 1s; }
+    .figuras__titulo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .figuras .figuras__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .figuras .figuras__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .figuras .figuras__contenedor__producto h3 {
+          font-size: 40px; }
+        .figuras .figuras__contenedor__producto p {
+          font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .figuras {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1s; }
+    .figuras__titulo {
+      display: flex;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .figuras .figuras__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .figuras .figuras__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .figuras .figuras__contenedor__producto h3 {
+          font-size: 40px; }
+        .figuras .figuras__contenedor__producto p {
+          font-size: 40px; } }
+
+/* NOVEDADES */
+.novedades {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadein 1s;
+  padding-bottom: 60px; }
+  .novedades__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    font-family: "Montserrat", sans-serif, bold;
+    font-weight: 800;
+    color: #02b902; }
+  .novedades__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px; }
+    .novedades__contenedor .novedades__producto {
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 2px 2px 2px #b8b8b8;
+      align-items: center; }
+      .novedades__contenedor .novedades__producto h3 {
+        padding: 20px; }
+      .novedades__contenedor .novedades__producto p {
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif, medium; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 320px) {
+  .novedades {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    animation: fadein 1s; }
+    .novedades__titulo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .novedades .novedades__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .novedades .novedades__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .novedades .novedades__contenedor__producto h3 {
+          font-size: 40px; }
+        .novedades .novedades__contenedor__producto p {
+          font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .novedades {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1s; }
+    .novedades__titulo {
+      display: flex;
+      justify-content: center;
+      width: 550px;
+      padding: 40px;
+      font-size: 30px; }
+    .novedades .novedades__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 20px;
+      width: min-content; }
+      .novedades .novedades__contenedor__producto {
+        justify-items: center;
+        padding: 30px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+        box-shadow: 2px 2px 7px gray;
+        text-align: center;
+        font-size: 20px; }
+        .novedades .novedades__contenedor__producto h3 {
+          font-size: 40px; }
+        .novedades .novedades__contenedor__producto p {
+          font-size: 40px; } }
+
+/* LANZAMIENTOS */
+.lanzamientos__titulo {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  font-family: "Montserrat", sans-serif, bold;
+  font-weight: 800;
+  color: #02b902; }
+  .lanzamientos__titulo__juegos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .lanzamientos__titulo__juegos img {
+      padding: 40px; }
+
+.banner {
+  display: flex;
+  width: auto; }
+
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; }
+  .nosotros__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    font-family: "Montserrat", sans-serif, bold;
+    font-weight: 800;
+    color: #02b902; }
+  .nosotros p {
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    text-align: center; }
+
+.form__seccion {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 60px; }
+  .form__seccion__datos {
+    padding: 20px; }
+  .form__seccion__gif {
+    padding: 20px; }
