@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: $color-principal;
-    width: auto;
+    width: 100%;
     background: $color-principal;
     padding: $spacing-xs;
     box-shadow: 2px 2px 7px;
@@ -51,6 +51,13 @@
 
 @media screen and (max-width: 320px) {
 
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .menu {
         display: flex;
         flex-wrap: wrap;
@@ -61,12 +68,17 @@
         padding: $spacing-xs;
         box-shadow: 2px 2px 7px;
         animation: fadein 2s; 
+        width: 100%;
 
 
         &__logo {
-            padding-bottom: $spacing-s; 
+            padding-bottom: $spacing-s;
+            transition: transform .2s;
         }
-    
+
+        menu:hover {
+            transform: scale(1.05);
+        }     
 
         &__enlaces {
             display: flex;
@@ -101,6 +113,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .menu {
@@ -125,24 +138,28 @@
             flex-direction: column;
             gap: $spacing-xxs;
             font-size: $font-s;
-            align-items: center;
+
+            ul {
+                padding: 0px;
+                margin: 0px;
+            }
     
             li {
                 list-style: none;
-                align-items: center;
+                text-align: center;
             }
             
             a {
                 font-family: $font-text;
                 font-size: $font-s;
                 flex-wrap: wrap;
-                color: white;
+                color: $color-secundario;
                 text-decoration: none;
                 transition: 0.5s;
             }
     
             a:hover {
-                color: rgb(1, 80, 1);
+                color: $color-textos;
             }
         } 
     } 

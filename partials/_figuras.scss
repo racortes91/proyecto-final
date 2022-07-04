@@ -1,49 +1,52 @@
  /* FIGURAS */
 
  .figuras {
-    @include flex(wrap, column, center, fadein 1s, $spacing-m);
-    /*display: flex;
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    animation: fadein 1s;
-    padding-bottom: $spacing-m; */
+    justify-content: space-around;
+    padding: $spacing-s;
     
     &__titulo {
         display: flex;
         justify-content: center;
-        padding: $spacing-l;
+        padding: $spacing-s;
         font-family: $font-titulo;
         font-weight: 800;
         color: $color-titulo;
+        width: 100%;
     }
 
     &__contenedor {
         display: flex;
-        justify-content: center;
-        gap: $spacing-l;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        justify-content: space-around;
+        padding: $spacing-xxs;
     
         .figuras__producto {
-            @extend .consolas__contenedor;
-            /*display: flex;
-            flex-direction: column;
-            background-color: rgb(248, 248, 248);
-            border-radius: 20px;
-            padding: $spacing-s;
-            box-shadow: 2px 2px 2px rgb(184, 184, 184);
-            align-items: center;*/
+            background-color: $color-secundario;
+            padding: $spacing-xs;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 2px rgb(179, 179, 179);
+            align-content: center;
         
            h3 {
-               padding: $spacing-xs;
+            font-family: $font-titulo;
+            font-size: $font-s;
+            color: $color-titulo;
+            padding: $spacing-xs 0 $spacing-xxs;
+            font-weight: 800;
+            text-align: center;
            }
 
            p {
-               font-size: $font-m;
-               font-family: $font-text;
+            font-family: $font-text;
+            font-size: $font-m;
+            text-align: center
            }
         }
     }
-}   
+}     
 
 @keyframes fadein {
     0% {
@@ -153,48 +156,54 @@
 }
 
  /* NOVEDADES */
-.novedades {
+
+ .novedades {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    animation: fadein 1s;
-    padding-bottom: $spacing-m; 
+    justify-content: space-around;
+    padding: $spacing-s;
     
     &__titulo {
         display: flex;
         justify-content: center;
-        padding: $spacing-l;
+        padding: $spacing-s;
         font-family: $font-titulo;
         font-weight: 800;
         color: $color-titulo;
+        width: 100%;
     }
 
     &__contenedor {
         display: flex;
-        justify-content: center;
-        gap: $spacing-l;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        justify-content: space-around;
+        padding: $spacing-xxs;
     
         .novedades__producto {
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(248, 248, 248);
-            border-radius: 20px;
-            padding: $spacing-s;
-            box-shadow: 2px 2px 2px rgb(184, 184, 184);
-            align-items: center;
+            background-color: $color-secundario;
+            padding: $spacing-xs;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 2px rgb(179, 179, 179);
+            align-content: center;
         
            h3 {
-               padding: $spacing-xs;
+            font-family: $font-titulo;
+            font-size: $font-s;
+            color: $color-titulo;
+            padding: $spacing-xs 0 $spacing-xxs;
+            font-weight: 800;
+            text-align: center;
            }
 
            p {
-               font-size: $font-m;
-               font-family: $font-text;
+            font-family: $font-text;
+            font-size: $font-m;
+            text-align: center
            }
         }
     }
-}   
+}  
 
 @keyframes fadein {
     0% {
@@ -212,49 +221,109 @@
 
     .novedades {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: min-content;
-        animation: fadein 1s;
-
+        justify-content: space-around;
+        padding: $spacing-s;
+        
         &__titulo {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            width: 550px;
             padding: $spacing-s;
-            font-size: 30px;
+            font-family: $font-titulo;
+            font-weight: 800;
+            color: $color-titulo;
+            width: 100%;
         }
     
-        .novedades__contenedor {
+        &__contenedor {
             display: flex;
-            flex-direction: column;
-            justify-items: center;
-            gap: 20px;
-            width: min-content;
-    
-            &__producto {
-                justify-items: center;
-                padding: 30px;
-                background-color: rgb(234, 234, 234);
-                border-radius: 20px;
-                box-shadow: 2px 2px 7px gray;
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            justify-content: space-around;
+            padding: $spacing-xxs;
+
+        
+            .novedades__producto {
+                background-color: $color-secundario;
+                padding: $spacing-xs;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 2px rgb(179, 179, 179);
+                align-content: center;
+                margin: $spacing-xs;
+                
+            
+               h3 {
+                font-family: $font-titulo;
+                font-size: $font-s;
+                color: $color-titulo;
+                padding: $spacing-xs 0 $spacing-xxs;
+                font-weight: 800;
                 text-align: center;
-                font-size: $spacing-xs;
+               }
     
-                h3 {
-                    font-size: 40px;
-                }
-             
-                p {
-                    font-size: 40px;
-                }
-            }  
-       }  
-    }
+               p {
+                font-family: $font-text;
+                font-size: $font-m;
+                text-align: center
+               }
+            }
+        }
+    }    
    
+}
+
+@media screen and (max-width: 480px) {
+
+    .novedades {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: $spacing-s;
+        
+        &__titulo {
+            display: flex;
+            justify-content: center;
+            padding: $spacing-s;
+            font-family: $font-titulo;
+            font-weight: 800;
+            color: $color-titulo;
+            width: 100%;
+        }
+    
+        &__contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            justify-content: space-around;
+            padding: $spacing-xxs;
+
+        
+            .novedades__producto {
+                background-color: $color-secundario;
+                padding: $spacing-xs;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 2px rgb(179, 179, 179);
+                align-content: center;
+                margin: $spacing-xs;
+                
+            
+               h3 {
+                font-family: $font-titulo;
+                font-size: $font-s;
+                color: $color-titulo;
+                padding: $spacing-xs 0 $spacing-xxs;
+                font-weight: 800;
+                text-align: center;
+               }
+    
+               p {
+                font-family: $font-text;
+                font-size: $font-m;
+                text-align: center
+               }
+            }
+        }
+    } 
 }
 
 @media screen and (max-width: 480px) {
@@ -304,21 +373,37 @@
 }
 /* LANZAMIENTOS */
 
-.lanzamientos__titulo {
+.lanzamientos {
     display: flex;
-    justify-content: center;
-    padding: $spacing-l;
-    font-family: $font-titulo;
-    font-weight: 800;
-    color: $color-titulo;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $spacing-s;
 
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        padding: $spacing-s;
+        font-family: $font-titulo;
+        font-weight: 800;
+        color: $color-titulo;
+        width: 100%;
+        text-align: center;
+    }
+    
     &__juegos {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
         
         img {
             padding: $spacing-s;
+            transition: transform .2s;
+            padding: $spacing-s;
         }
+        
+        img:hover {
+            transform: scale(1.05);
+        } 
     }
 }

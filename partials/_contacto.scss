@@ -13,3 +13,207 @@
     }
 
 }
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $spacing-s;
+    
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        padding: $spacing-s;
+        font-family: $font-titulo;
+        font-weight: 800;
+        color: $color-titulo;
+        width: 100%;
+    }
+
+    &__contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        justify-content: space-around;
+        padding: $spacing-xxs;
+    
+        .novedades__producto {
+            background-color: $color-secundario;
+            padding: $spacing-xs;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 2px rgb(179, 179, 179);
+            align-content: center;
+        
+           h3 {
+            font-family: $font-titulo;
+            font-size: $font-s;
+            color: $color-titulo;
+            padding: $spacing-xs 0 $spacing-xxs;
+            font-weight: 800;
+            text-align: center;
+           }
+
+           p {
+            font-family: $font-text;
+            font-size: $font-m;
+            text-align: center
+           }
+        }
+    }
+}  
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .novedades {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: $spacing-s;
+        
+        &__titulo {
+            display: flex;
+            justify-content: center;
+            padding: $spacing-s;
+            font-family: $font-titulo;
+            font-weight: 800;
+            color: $color-titulo;
+            width: 100%;
+        }
+    
+        &__contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            justify-content: space-around;
+            padding: $spacing-xxs;
+
+        
+            .novedades__producto {
+                background-color: $color-secundario;
+                padding: $spacing-xs;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 2px rgb(179, 179, 179);
+                align-content: center;
+                margin: $spacing-xs;
+                
+            
+               h3 {
+                font-family: $font-titulo;
+                font-size: $font-s;
+                color: $color-titulo;
+                padding: $spacing-xs 0 $spacing-xxs;
+                font-weight: 800;
+                text-align: center;
+               }
+    
+               p {
+                font-family: $font-text;
+                font-size: $font-m;
+                text-align: center
+               }
+            }
+        }
+    }    
+   
+}
+
+@media screen and (max-width: 480px) {
+
+    .novedades {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: $spacing-s;
+        
+        &__titulo {
+            display: flex;
+            justify-content: center;
+            padding: $spacing-s;
+            font-family: $font-titulo;
+            font-weight: 800;
+            color: $color-titulo;
+            width: 100%;
+        }
+    
+        &__contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            justify-content: space-around;
+            padding: $spacing-xxs;
+
+        
+            .novedades__producto {
+                background-color: $color-secundario;
+                padding: $spacing-xs;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 2px rgb(179, 179, 179);
+                align-content: center;
+                margin: $spacing-xs;
+                
+            
+               h3 {
+                font-family: $font-titulo;
+                font-size: $font-s;
+                color: $color-titulo;
+                padding: $spacing-xs 0 $spacing-xxs;
+                font-weight: 800;
+                text-align: center;
+               }
+    
+               p {
+                font-family: $font-text;
+                font-size: $font-m;
+                text-align: center
+               }
+            }
+        }
+    } 
+}
+
+.lanzamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $spacing-s;
+
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        padding: $spacing-s;
+        font-family: $font-titulo;
+        font-weight: 800;
+        color: $color-titulo;
+        width: 100%;
+        text-align: center;
+    }
+    
+    &__juegos {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        img {
+            padding: $spacing-s;
+            transition: transform .2s;
+            padding: $spacing-s;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        } 
+    }
+}
