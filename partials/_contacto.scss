@@ -1,8 +1,10 @@
 .form__seccion {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    padding: $spacing-m;
+    gap: $spacing-m;
+    width: 100%;
 
     &__datos {
         padding: $spacing-xs;
@@ -10,6 +12,7 @@
 
     &__gif {
         padding: $spacing-xs;
+        align-content: center;
     }
 
 }

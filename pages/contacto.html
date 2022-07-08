@@ -82,21 +82,13 @@
 
     <!--Inicio Sección Form-->
     <section class="form__seccion justify-content-center">
-        <form class="form__datos">
-            <div class="mb-3 ">
-              <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Teléfono</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <h1> Enterate de todo lo que tenemos para ti</h1>
+        <form action="/action_page.php">
+            <input type="text" id="fname" name="fname" value="Nombre"><br>
+            <input type="text" id="lname" name="lname" value="Correo"><br><br>
+            <input type="text" id="lname" name="lname" value="Teléfono"><br><br>
+            <input type="submit" value="Enviar">
+          </form>
         <picture class="form__gif">
             <img src="../img/sold-sanke.gif" alt="">
         </picture>
@@ -136,19 +128,19 @@
                 <img src="../img/deku.jpg" alt="" height="200px">
                 <h3>Figura Boku No Hero</h3>
                 <p class="precio"> $50.000</p>
-                <input type="button" value="anadir">
+                <input class="boton" type="button" value="anadir">
             </article>
             <article class="novedades__producto"> 
                 <img src="../img/elden-ring.jpg" alt="" height="200px">
                 <h3>Elden Ring Ps5</h3>
                 <p class="precio"> $65.000</p>
-                <input type="button" value="anadir">
+                <input class="boton" type="button" value="anadir">
             </article>
             <article class="novedades__producto"> 
                 <img src="../img/dualsense.jpg" alt="" height="200px">
                 <h3>Dualsense Ps5</h3>
                 <p class="precio"> $55.000</p>
-                <input type="button" value="anadir">
+                <input class="boton" type="button" value="anadir">
             </article> 
         </section>
     </section> 
