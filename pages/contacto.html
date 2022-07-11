@@ -81,17 +81,22 @@
     <!-- FIN SECCIÓN CARRUSEL-->
 
     <!--Inicio Sección Form-->
-    <section class="form__seccion justify-content-center">
-        <h1> Enterate de todo lo que tenemos para ti</h1>
-        <form action="/action_page.php">
-            <input type="text" id="fname" name="fname" value="Nombre"><br>
-            <input type="text" id="lname" name="lname" value="Correo"><br><br>
-            <input type="text" id="lname" name="lname" value="Teléfono"><br><br>
-            <input type="submit" value="Enviar">
-          </form>
-        <picture class="form__gif">
-            <img src="../img/sold-sanke.gif" alt="">
-        </picture>
+    <section class="form__contenedor">
+        <h1 class="form__titulo"> Enterate de todo lo que tenemos para ti</h1>
+        <section class="form__seccion">
+            <form class="form__datos">
+                <label for="Nombre">Nombre      </label>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="Correo">Correo      </label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <label for="Teléfono">Teléfono  </label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <button> Enviar </button>
+              </form>
+            <picture class="form__gif">
+                <img src="../img/sold-sanke.gif"   width="300px" alt="">
+            </picture>
+        </section>
     </section>
     <!--Inicio Sección Form-->
     <!--Fin Sección Productos-->
@@ -157,6 +162,7 @@
             <img src="../img/lanzamineto-5.jpg" alt="">
         </section>
     </section>
+    <!--Fin SECCIÓN LANZAMIENTOS-->
 
 
     <!-- INICIO SECCIÓN FOOTER-->

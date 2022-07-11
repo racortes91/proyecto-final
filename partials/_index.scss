@@ -349,6 +349,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: $spacing-s;
+    width: 100%;
 
     &__titulo {
         display: flex;
@@ -363,12 +364,10 @@
     
     &__juegos {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        justify-content: center;
         
         img {
-            padding: $spacing-s;
+            padding: $spacing-xxs;
             transition: transform .2s;
             padding: $spacing-s;
         }

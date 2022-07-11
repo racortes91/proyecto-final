@@ -1,18 +1,63 @@
-.form__seccion {
+.form__contenedor {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     gap: $spacing-m;
-    width: 100%;
+    padding: $spacing-m;
 
-    &__datos {
-        padding: $spacing-xs;
+    h1 {
+        display: flex;
+        justify-content: center;
+        padding: $spacing-s;
+        font-family: $font-titulo;
+        font-weight: 800;
+        color: $color-titulo;
+        width: 100%;
+        text-align: center;
     }
 
-    &__gif {
-        padding: $spacing-xs;
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
         align-content: center;
+        padding: $spacing-s;
+        background-color: $color-secundario;
+        border-radius: $spacing-xxs;
+        box-shadow: 2px 2px 2px rgb(179, 179, 179);
+        gap: $spacing-s;
+    }
+
+    label {
+        padding: $spacing-xxs;
+    }
+
+    button {
+        background-color: $color-principal;
+        color: aliceblue;
+        padding: $spacing-xxs;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 2px 2px 7px gray;
+        width: 100%;   
+        transition: transform .2s;
+    }
+
+    input {
+        align-items: center;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    } 
+
+    picture {
+        align-content: center;
+        padding: $spacing-s;
+
     }
 
 }

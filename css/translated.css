@@ -406,7 +406,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 40px; }
+  padding: 40px;
+  width: 100%; }
   .lanzamientos__titulo {
     display: flex;
     justify-content: center;
@@ -418,11 +419,9 @@ ul {
     text-align: center; }
   .lanzamientos__juegos {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center; }
+    flex-wrap: wrap; }
     .lanzamientos__juegos img {
-      padding: 40px;
+      padding: 10px;
       transition: transform .2s;
       padding: 40px; }
     .lanzamientos__juegos img:hover {
@@ -1118,18 +1117,50 @@ ul {
     flex-wrap: wrap;
     text-align: center; }
 
-.form__seccion {
+.form__contenedor {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   gap: 60px;
-  width: 100%; }
-  .form__seccion__datos {
-    padding: 20px; }
-  .form__seccion__gif {
-    padding: 20px;
-    align-content: center; }
+  padding: 60px; }
+  .form__contenedor h1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: "Montserrat", sans-serif, bold;
+    font-weight: 800;
+    color: #02b902;
+    width: 100%;
+    text-align: center; }
+  .form__contenedor section {
+    display: flex;
+    justify-content: center; }
+  .form__contenedor form {
+    align-content: center;
+    padding: 40px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #b3b3b3;
+    gap: 40px; }
+  .form__contenedor label {
+    padding: 10px; }
+  .form__contenedor button {
+    background-color: #02b902;
+    color: aliceblue;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 7px gray;
+    width: 100%;
+    transition: transform .2s; }
+  .form__contenedor input {
+    align-items: center; }
+  .form__contenedor button:hover {
+    transform: scale(1.05); }
+  .form__contenedor picture {
+    align-content: center;
+    padding: 40px; }
 
 .novedades {
   display: flex;
