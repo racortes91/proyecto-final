@@ -46,10 +46,6 @@
         transition: transform .2s;
     }
 
-    input {
-        align-items: center;
-    }
-
     button:hover {
         transform: scale(1.05);
     } 
@@ -57,7 +53,6 @@
     picture {
         align-content: center;
         padding: $spacing-s;
-
     }
 
 }
