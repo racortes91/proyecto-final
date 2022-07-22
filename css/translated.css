@@ -339,7 +339,7 @@ ul {
       text-align: center; }
     .novedades__contenedor {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       border-radius: 1rem;
       justify-content: space-around;
       padding: 10px; }
@@ -379,7 +379,7 @@ ul {
       text-align: center; }
     .novedades__contenedor {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       border-radius: 1rem;
       justify-content: space-around;
       padding: 10px; }
@@ -844,42 +844,44 @@ ul {
 @media screen and (max-width: 320px) {
   .figuras {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-    animation: fadein 1s; }
+    justify-content: space-around; }
     .figuras__titulo {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      width: 550px;
       padding: 40px;
-      font-size: 30px; }
-    .figuras .figuras__contenedor {
+      font-family: "Montserrat", sans-serif, bold;
+      font-weight: 800;
+      color: #02b902;
+      width: 100%; }
+    .figuras__contenedor {
       display: flex;
-      flex-direction: column;
-      justify-items: center;
-      gap: 20px;
-      width: min-content; }
-      .figuras .figuras__contenedor__producto {
-        justify-items: center;
-        padding: 30px;
-        background-color: #eaeaea;
-        border-radius: 20px;
-        box-shadow: 2px 2px 7px gray;
-        text-align: center;
-        font-size: 20px; }
-        .figuras .figuras__contenedor__producto h3 {
-          font-size: 40px; }
-        .figuras .figuras__contenedor__producto p {
-          font-size: 40px; } }
+      flex-wrap: wrap;
+      border-radius: 1rem;
+      justify-content: space-around;
+      padding-bottom: 10px; }
+      .figuras__contenedor .figuras__producto {
+        background-color: #e6e6e6;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 2px #b3b3b3;
+        width: auto;
+        margin: 2rem;
+        align-content: center; }
+        .figuras__contenedor .figuras__producto h3 {
+          font-family: "Montserrat", sans-serif, bold;
+          font-size: 20px;
+          color: #2a2a2a;
+          padding-top: 20px;
+          text-align: center; }
+        .figuras__contenedor .figuras__producto p {
+          font-family: "Montserrat", sans-serif, medium;
+          font-size: 30px;
+          text-align: center; } }
 
 @media screen and (max-width: 480px) {
   .figuras {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1119,6 +1121,54 @@ ul {
   .nosotros__foto {
     max-width: 50%; }
 
+@media screen and (max-width: 320px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column; }
+    .nosotros__titulo {
+      display: flex;
+      text-align: center;
+      padding: 40px;
+      font-family: "Montserrat", sans-serif, bold;
+      font-weight: 800;
+      color: #02b902;
+      width: 100%; }
+    .nosotros__contendor {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      max-width: 100%; }
+    .nosotros__texto {
+      text-align: center;
+      align-self: center;
+      font-size: 12px; }
+    .nosotros img {
+      align-self: center; } }
+
+@media screen and (max-width: 480px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column; }
+    .nosotros__titulo {
+      display: flex;
+      text-align: center;
+      padding: 40px;
+      font-family: "Montserrat", sans-serif, bold;
+      font-weight: 800;
+      color: #02b902;
+      width: 100%; }
+    .nosotros__contendor {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      max-width: 100%; }
+    .nosotros__texto {
+      text-align: center;
+      align-self: center;
+      font-size: 12px; }
+    .nosotros img {
+      align-self: center; } }
+
 .form__contenedor {
   display: flex;
   flex-direction: column;
@@ -1128,14 +1178,16 @@ ul {
   .form__contenedor h1 {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 10px;
     font-family: "Montserrat", sans-serif, bold;
     font-weight: 800;
     color: #02b902;
-    width: 100%;
-    text-align: center; }
+    min-width: 100%;
+    text-align: center;
+    font-size: 20px; }
   .form__contenedor section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; }
   .form__contenedor form {
     align-content: center;

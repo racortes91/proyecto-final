@@ -29,7 +29,7 @@
             border-radius: 1rem;
             box-shadow: 2px 2px 2px rgb(179, 179, 179);
             align-content: center;
-        
+
            h3 {
             font-family: $font-titulo;
             font-size: $font-s;
@@ -64,44 +64,47 @@
 
     .figuras {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: min-content;
-        animation: fadein 1s;
+        justify-content: space-around;
 
         &__titulo {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            width: 550px;
             padding: $spacing-s;
-            font-size: 30px;
+            font-family: $font-titulo;
+            font-weight: 800;
+            color: $color-titulo;
+            width: 100%;
         }
     
-        .figuras__contenedor {
+        &__contenedor {
             display: flex;
-            flex-direction: column;
-            justify-items: center;
-            gap: 20px;
-            width: min-content;
-    
-            &__producto {
-                justify-items: center;
-                padding: 30px;
-                background-color: rgb(234, 234, 234);
-                border-radius: 20px;
-                box-shadow: 2px 2px 7px gray;
-                text-align: center;
-                font-size: $spacing-xs;
-    
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            justify-content: space-around;
+            padding-bottom: $spacing-xxs;
+        
+            .figuras__producto {
+                background-color: $color-secundario;
+                padding: 2rem;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 2px rgb(179, 179, 179);
+                width: auto;
+                margin: 2rem;
+                align-content: center;
+        
                 h3 {
-                    font-size: 40px;
+                font-family: $font-titulo;
+                font-size: $font-s;
+                color: $color-textos;
+                padding-top: $spacing-xs;
+                text-align: center;
                 }
              
                 p {
-                    font-size: 40px;
+                font-family: $font-text;
+                font-size: $font-m;
+                text-align: center
                 }
             }  
        }  
@@ -113,7 +116,6 @@
 
     .figuras {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
