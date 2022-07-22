@@ -22,7 +22,7 @@ body {
   width: 100%;
   transition: transform .2s; }
 
-input:hover {
+.boton:hover {
   transform: scale(1.05); }
 
 ul {
@@ -1099,23 +1099,25 @@ ul {
 
 .nosotros {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px; }
+  flex-direction: column; }
   .nosotros__titulo {
     display: flex;
     justify-content: center;
-    padding: 80px;
+    padding: 40px;
     font-family: "Montserrat", sans-serif, bold;
     font-weight: 800;
-    color: #02b902; }
-  .nosotros p {
+    color: #02b902;
+    width: 100%; }
+  .nosotros__contendor {
     display: flex;
-    font-size: 20px;
-    padding-bottom: 40px;
     flex-wrap: wrap;
-    text-align: center; }
+    padding: 40px;
+    justify-content: space-around; }
+  .nosotros__texto {
+    text-align: justify;
+    max-width: 50%; }
+  .nosotros__foto {
+    max-width: 50%; }
 
 .form__contenedor {
   display: flex;
@@ -1154,8 +1156,6 @@ ul {
     box-shadow: 2px 2px 7px gray;
     width: 100%;
     transition: transform .2s; }
-  .form__contenedor input {
-    align-items: center; }
   .form__contenedor button:hover {
     transform: scale(1.05); }
   .form__contenedor picture {
